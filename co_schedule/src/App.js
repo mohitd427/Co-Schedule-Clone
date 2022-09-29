@@ -9,7 +9,7 @@ import LandingPage from './Pages/LandingPage';
 const theme = extendTheme({
   fonts: {
     heading: `'Open Sans', sans-serif`,
-    body: `Raleway`,
+    body: `'Raleway', sans-serif`,
   },
 })
 
