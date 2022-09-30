@@ -14,16 +14,20 @@ import { Box,
     SimpleGrid,
     Divider} from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 export default function LandingPage(){
     return (
         <>
+        <Navbar/>
         <Box  alignItems={'center'} textAlign='center' width={'full'} bg={"blackAlpha.50"} height={'350px'}>
             <Text pt={'10'}  textAlign='center' fontSize='5xl' color='blackAlpha.800' fontWeight={'100'} >
             Organize All Of Your Marketing In<br/> One Place. From Any Place.
             </Text>
             <Text mt='2' mb={'4'} textAlign={'center'} >Get more done in less time with the only work management software for marketers.</Text>
-            <Button ml={''} mt='2' mb={'4'} colorScheme='orange' p={'30px'}>Get Started Free</Button>
+            <Button ml={''} mt='2' mb={'4'} colorScheme='orange' p={'30px'}><Link to={'/signup'}>Get Started Free</Link> </Button>
             <Text pb={'10px'} textAlign={'center'}>Why not? It's free forever.</Text>
         </Box>
 
@@ -204,11 +208,11 @@ export default function LandingPage(){
     </SimpleGrid>
     <Box textAlign={'center'} mt={'150px'} height={'300px'} bgGradient='linear(to-l, orange.200, orange.400)'>
         <Text textColor={'white'} fontWeight={'20px'} pt={'80px'} fontSize={'4xl'}>Organize all of your marketing in one place</Text>
-        <Button ml={''} mt='2' mb={'4'} colorScheme='orange' p={'30px'}>Get Started Free</Button>
+        <Button ml={''} mt='2' mb={'4'} colorScheme='orange' p={'30px'}><Link to={'/signup'}> Get Started Free</Link> </Button>
 
     </Box>
 
-
+<Footer/>
         
         </>
     )

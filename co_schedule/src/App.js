@@ -1,10 +1,13 @@
 import React from 'react';
+import "./style.css";
+
 import {
   ChakraProvider, extendTheme,
 } from '@chakra-ui/react';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import LandingPage from './Pages/LandingPage';
+import AllRoutes from './Pages/AllRoutes';
 
 const theme = extendTheme({
   fonts: {
@@ -18,9 +21,9 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
 
-    <Navbar/>
-    <LandingPage/>
-    <Footer/>
+  
+    <AllRoutes/>
+ 
     </ChakraProvider>
   );
 }

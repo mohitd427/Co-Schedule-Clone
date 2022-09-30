@@ -5,11 +5,12 @@ import { Box,
     Heading, 
     AtSignIcon, 
     HStack, 
-    Link, 
+
     Image,
     Button, 
     Spacer} from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
     return (
@@ -30,9 +31,9 @@ export default function Navbar(){
             </Flex>
             <Spacer/>
             <Flex alignItems={'center'} gap={4}>
-                <Link>Sign In</Link>
+                <Link to={'/signup'}>Sign In</Link>
                 <Link>Get A Demo</Link>
-                <Button bg={'orange.500'} textColor='white'>Create My Calender</Button>
+                <Button  bg={'orange.500'} textColor='white'> <Link to={'/signup'}> Create My Calender</Link></Button>
             </Flex>
         </Flex>
         
