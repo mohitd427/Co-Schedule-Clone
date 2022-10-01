@@ -2,7 +2,7 @@ import React,{ useState } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../Context/AppContext";
 import { useNavigate} from 'react-router-dom';
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 
 function Login() {
   const [email,setEmail] = useState("");
@@ -40,7 +40,11 @@ function Login() {
         </Box>
     
     <div className="login-page">
+      
       <form onSubmit={handleSubmit} className="form" data-testid="login-form">
+        <Box textAlign={'center'}>
+        <Image ml='100px' width={'150px'} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFqIzq6x4ycZkEoxR3pEWOZmJVBnkCkkQsgxJbSo0nghXpM0JQb-B2_iheDT7sAHQqIA&usqp=CAU' alt='icon' />
+      </Box>
         <div>
           <label>
             <input
